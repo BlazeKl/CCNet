@@ -1,17 +1,16 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        {% load static %}
         <meta charset="UTF-8">
-        
-       
-        <link rel="stylesheet" href="{% static 'cuentas/css/login.css' % }" >
+        <link rel="stylesheet" type="text/css" href="{% static '/css/login.css' %}" >
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <title>Login</title>
     </head>
 
-    <body>
+    <body style="background-color:grey">
         <section class="form-login">
             <h5>Ingresar datos de acceso</h5>
             <input  class="controls" type="text" name="usuario" value="" placeholder="Usuario">

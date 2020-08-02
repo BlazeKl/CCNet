@@ -29,8 +29,13 @@ class Empresa(models.Model):
         return self.nombre
 
 class Trabajo(models.Model):
-    rut = models.ForeignKey(Empleado, on_delete=models.SET_NULL)
+    nombre = models.CharField(max_length=200)
+    rut = models.ForeignKey(Empleado, null=True, on_delete=models.SET_NULL)
     empresa = models.ForeignKey(Empresa, on_delete=models.CASCADE)
-    aporte = models.ForeignKey(Aporte, on_delete=models.SET_NULL)
+    aporte = models.ForeignKey(Aporte, null=True, on_delete=models.SET_NULL)
     inicio = models.DateField()
     final = models.DateField()
+
+    def __str__(self):
+        return self.nombre
+    

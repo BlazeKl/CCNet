@@ -6,8 +6,17 @@ from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
 
 
-def home(request):
+def dash(request):
     return render(request, 'mainpage/dashboard.html')
 
 def login(request):
     return render(request, 'mainpage/login.html')
+
+def cli(request):
+    return render(request, 'mainpage/clientes.html')
+
+def jobs(request):
+    return render(request, 'mainpage/trabajos.html')
+
+def tags(request):
+    return render(request, 'mainpage/categorias.html')

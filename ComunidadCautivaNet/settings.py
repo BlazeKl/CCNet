@@ -11,7 +11,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-from ComunidadCautivaNet.secrets.local_settings import *
+from ComunidadCautivaNet.secrets.local_settings import SECRET_KEY
+from ComunidadCautivaNet.secrets.local_settings import DEBUG
+from ComunidadCautivaNet.secrets.local_settings import ALLOWED_HOSTS
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 
-ALLOWED_HOSTS = []
+
 
 
 # Application definition
